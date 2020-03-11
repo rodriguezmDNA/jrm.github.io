@@ -1,0 +1,186 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #6b6b6b;
+  overflow-x: hidden;
+}
+
+
+.crimsonFont{
+  font-family: 'Crimson Text', serif;
+}
+.topHeader {
+  /*min-height: 500px;*/ /* fallback for older browsers */
+  min-height:  10vh;
+  background: transparent;
+  padding: 45px 10px;
+  /*position: relative;
+  display: flex;
+  align-items: center;  
+  object-fit: contain;
+  overflow: hidden;*/
+}
+
+
+.bottom {
+  /*min-height: 500px;*/ /* fallback for older browsers */
+  min-height:  50vh;
+  opacity: 1;
+  padding: 45px 10px;
+  /*position: relative;
+  display: flex;
+  align-items: center;  
+  object-fit: contain;
+  overflow: hidden;*/
+}
+
+/*#group1 .parallax__layer--base {
+    background: rgb(102,204,102);
+  }
+*/
+
+.group1{
+	z-index: 5;
+}
+
+.group2{
+	z-index: 4;
+}
+
+.group3{
+	z-index: 3;
+}
+
+.group4{
+	z-index: 2;
+}
+
+.group5{
+	z-index: 1;
+}
+
+.card{
+	height: auto;
+	/*background: transparent;*/
+	opacity: 0.55;
+	padding: 5% 10%;
+
+    object-fit: contain;
+    overflow: auto;
+}
+
+
+.card:hover {
+  opacity: 1;
+}
+
+
+.social {
+  position: center;
+  color: white;
+  padding: 80px 43px 70px;
+  height: 100%;
+}
+
+.intro-icon {
+	padding: 25px 10px;
+	/*display: block;
+	text-align: center;*/
+}
+
+.containerCards {
+  /*background: white;*/
+  padding: 8%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  resize: vertical;
+  overflow: auto;
+}
+
+.title {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+
+/* https://keithclark.co.uk/articles/pure-css-parallax-websites/ */
+.parallax {
+    /*height: 200px;  fallback for older browsers */
+    height: 115vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+  }
+
+  .parallax__group {
+    position: relative;
+    /*height: 200px;  fallback for older browsers */
+    height: 75vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+
+  .parallax__sep {
+    position: relative;
+    height: 70px; /* fallback for older browsers */
+    height: 15vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+
+
+.parallax__bg {
+    position: relative;
+    height: 70px; /* fallback for older browsers */
+    height: 120vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .parallax__layer--fore {
+    -webkit-transform: translateZ(90px) scale(.7);
+    transform: translateZ(90px) scale(.7);
+    z-index: 1;
+  }
+
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 4;
+  }
+
+  .parallax__layer--back {
+    -webkit-transform: translateZ(-300px) scale(2);
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
+  }
+
+  .parallax__layer--deep {
+    -webkit-transform: translateZ(-600px) scale(3);
+    transform: translateZ(-600px) scale(3);
+    z-index: 2;
+  }
